@@ -6,8 +6,13 @@
     <title>yoga</title>
     <!----==========FAVICON===========------>
     <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!---============ CDN ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
     <!-----=========REMIXICONS========------>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+
     rel="stylesheet">
 
     <!-----=========CSS===============------>
@@ -26,19 +31,19 @@
                 <ul class="nav_list">
 
                     <li class="nav__item">
-                      <a href="#home" class="nav__link">Home</a>
+                      <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
-                      <a href="#health" class="nav__link">Health</a>
+                      <a href="#health" class="nav__link a">Health</a>
                     </li>
 
                     <li class="nav__item">
-                      <a href="#health" class="nav__link">Routine</a>
+                      <a href="#routine" class="nav__link ">Routine</a>
                     </li>
 
                     <li class="nav__item">
-                     <a href="#health" class="nav__link">Follow</a>
+                     <a href="#follow" class="nav__link ">Follow</a>
                     </li>
                 </ul>
  
@@ -47,12 +52,18 @@
                  <i class="ri-close-fill"></i>
                 </div>
             </div>
-         
+
+            <div class="nav_buttons">
+
+              <!------theme change button------>
+              <i class="ri-moon-line change-theme" id="theme-button"></i>
 
               <!--=========NAV TOGGLE==========-->
-        <div class="nav__toggle" id="nav-toggle">
-            <i class="ri-command-line"></i>
-        </div>
+              <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-command-line"></i>
+              </div>
+            </div>
+              
 
         </nav>
 
@@ -76,7 +87,7 @@
 
                 <img src="assets/img/circle-img.svg" alt="home image">
               </p>
-
+ 
               <a href="" class="button">
                 Get Started Free<i class="ri-arrow-right-line"></i>
               </a>
@@ -85,34 +96,283 @@
 
                 <div>
                   <h3>300</h3>
-                  <span>Class</span>
+                  <span>Yoga Class</span>
                 </div>
 
                 <div>
                   <h3>40+</h3>
                   <span>Participant</span>
                 </div>
-                
+                   
               </div>
-            
-
- 
-            <img src="assets/img//home-yoga.png" alt="">
           </div>
 
-
-        </div>
-
+          <img src="assets/img//home-yoga.png" alt="" class="home-img">
+        </div>  
       </section>
-
     </main>
 
 
+    <!--===================== LIST =============================-->
+    <section class="list section">
+      <div class="list_container container grid">
+        <div class="list_content">
+          <h1 class="list_number">#01</h1>
+          <div class="list-blob">
+            <img src="assets/img/list-yoga.png" alt="">
+          </div>
+        </div>
+        <div class="list_data">
+          <p class="list_description">
+            Get a list of specific influencers in your niche at your fingertips so you can focus on managing your status
+            <img src="assets/img/star-2-img.svg" alt="">
+          </p>
+
+          <a href="" class="button list_button">
+            Next <i class="r i-arrow-right-line"></i>
+            <img src="assets/img/ellipse-img.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--===================== HEALTH ============================-->
+    <section class="health section" id="health">
+      <div class="health_container container grid">
+        <div class="health_data">
+          <h2 class="section_title">
+            Bring Happiness To 
+            Good Health!
+          </h2>
+
+          <p class="health_description">
+            If you take care of your good health ,take 
+            care of your mentality and lead a healthly 
+            life with positive thought every day
+          </p> 
+
+          <a href="#" class="button">let's start
+            <i class="r i-arrow-right-line"></i> 
+          </a>
+        </div>
+
+        <div class="health_image">
+          <img src="assets/img/health-fitness.png" alt="" class="health_img">
+           
+            <div class="health_rate">
+              <div class="health_icon">
+                <i class="ri-heart-3-fill"></i>
+              </div>
+
+              <div class="health_group">
+                <span class="health_title">
+                  Health rate
+                </span>
+                <span class="health_number">
+                  168 bmp
+                </span>
+              </div>
+
+            </div>
+
+            <div class="health_course">
+              <div class="health_group">
+                <span class="health_number">
+                  500+
+                </span>
+
+                <span class="health_title">
+                  free Courses
+                </span>
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </section> 
+
+    <section class="routine section" id="routine">
+      <div class="routine_container container grid">
+        <div class="routine_data">
+          <h2 class="routine_title">
+            Anytime,Any Place
+            Any Workout
+          </h2>
+
+          <p class="routine_description">
+            Take your routine at any time of of your day
+            with the new videos and with teachers
+            who will guide you.
+          </p>
+
+          <a href="#" class="button">
+            Get started free <i class="r i-arrow-right-line"></i> 
+          </a>
+        </div>
+
+        <div class="routine_images">
+          <img src="assets/img/routine-yoga-1.png" alt="" class="routine_img-1">
+          <img src="assets/img/routine-yoga-2.png" alt="" class="routine_img-2">
+
+          <div class="routine_box-1">
+            <i class="ri-play-circle-line routine_icon"></i> 
+
+            <span class="routine_title">High Quality Video</span>
+          </div>
+
+          <div class="routine_box-2">
+            <i class="ri-run-fill routine_icon"></i>
+            <span class="routine_title">Professional Trainers</span>
+          </div>
+        </div>
+
+        <!--======================================= FOLLOW =================-->
+
+        <section class="follow" id="follow">
+          <div class="follow_container container grid">
+
+            <div class="follow_content-1">
+              <div class="follow_data">
+                <h2 class="section_title follow_title">
+                  Follow Us On 
+                  Instagram
+                  <div>#YOGA</div>
+                </h2>
+
+                <a href="" class="button follow_button">
+                  follow <i class="r i-arrow-right-line"></i> 
+                </a>
+              </div>
+
+              <img src="assets/img/follow-yoga-1.png" alt="" class="follow_img-1">
+              <img src="assets/img/follow-yoga-2.png" alt="" class="follow_img-2">
+            </div>
+
+            <div class="follow_content-2">
+              <img src="assets/img/follow-yoga-3.png" alt="" class="follow_img-3">
+              <img src="assets/img/follow-yoga-4.png" alt="" class="follow_img-4">
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+    <!--===================== JOIN ==============================-->
+    <section class="join section">
+      <div class="join_container container grid">
+        <div class="join_content">
+          <div>
+            <h2 class="join_title">
+              Join our newsletter
+            </h2>
+
+           <p class="join_description">
+             Subscribe to our newsletter to be aware of 
+             many things on discounts,gifts,training 
+             and much more .Just enter your email
+           </p> 
+          </div>
+
+          <form action="" class="join_form">
+            <input type="email" placeholder="For latest update send email" class="join_input">
+            <button class="button join_button">
+              Subscribe <i class="r i-arrow-right-line"></i> 
+            </button>
+             
+          </form>
+        </div>
+
+      </div>
+         
+    </section> 
+
     <!---==================== FOOTER ============================-->
     <footer class="footer">
+      <div class="footer_container container grid">
+        <div class="footer_content grid">
+          <div>
+            <a href="#" class="footer_logo">YOGA</a>
+            <p class="footer_description">
+              Take care of your health and <br>
+              your mind with the best <br>
+              YOGA classes.
+            </p>
+          </div>
+
+          <div class="footer_data grid">
+            <div>
+              <h3 class="footer_title">Address</h3>
+              <p class="footer_info">
+                12345 m/01 sol
+                Matangini, Kimala, Dar Es Salaam.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="footer_title">Contact</h3>
+              <p class="footer_info">
+                0675281621<br> 
+                meckrob5@gmail.com
+              </p>
+            </div>
+
+            <div>
+              <h3 class="footer_title">Office</h3>
+              <p class="footer_info">
+                Monday - Saturday <br>
+                8AM - 10PM
+              </p>
+            </div>
+          </div> 
+        </div>
+
+        <div class="footer_group">
+          <ul class="footer_social">
+
+            <li>
+              <a href="http://WWW.facebook.com" target="_blank" class="footer_social-link">
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="http://WWW.instagram.com" target="_blank" class="footer_social-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="http://WWW.youtube.com" target="_blank" class="footer_social-link">
+                <i class="ri-youtube-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="http://twitter.com" target="_blank" class="footer_social-link">
+                <i class="ri-twitter-line"></i>
+              </a>
+            </li>
+          </ul>
+
+          <span class="footer_copy">
+            #169:Copyright Meckhandsome.All right reserved  
+          </span>
+        </div>
+      </div>
  
-      <script src="assets/js/main.js"></script>
+      
     </footer>
+    <!--======================= SCROLL UP =======================-->
+    <a href="" class="scrollUp" id="scroll-Up">
+      <i class="ri-arrow-p-line"></i>
+    </a>
+    <!--======================= SCROLL REVEAL =======================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--======================= MAIN JS=======================-->
+    <script src="assets/js/main.js"></script>
       
 </body>
 </html>
